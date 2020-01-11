@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todolist</title>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/todolist.js"></script>
+    <link rel="stylesheet" href="./css/todolist.css">
+</head>
+
+<body>
+    <!-- 页眉部分 -->
+    <header>
+        <section>
+            <label for="title">toDoList</label>
+            <input type="text" id="title" required="required" autocomplete="off" name="title" placeholder="请输入代办事项">
+        </section>
+    </header>
+
+    <!-- 主体部分 -->
+    <section>
+        <h2>正在进行 <span id="todocount"></span></h2>
+        <ol id="todolist"></ol>
+
+        <h2>已经完成 <span id="donecount"></span></h2>
+        <ul id="donelist"></ul>
+    </section>
+
+    <!-- 页脚部分 -->
+    <footer> Copyright &copy; 2014 todolist.cn</footer>
+</body>
+
+</html>
